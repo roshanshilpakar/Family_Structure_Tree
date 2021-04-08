@@ -34,7 +34,7 @@ input {
     top: -10%;
     right: 48%;
     background-image: linear-gradient(-45deg,
-            #20dbc2 0%, #00dfa6 100%);
+            #20dbc2 0%, #00b2df 100%);
     transform: translateY(-50%);
     border-radius: 50%;
     z-index: 6;
@@ -150,6 +150,16 @@ form {
     z-index: 5;
 }
 
+.signup-signup {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+}
+
 form.sign-in-form {
     z-index: 2;
 }
@@ -157,6 +167,7 @@ form.sign-in-form {
 form.sign-up-form {
     z-index: 1;
     opacity: 0;
+    text-align: left;
 }
 
 .image {
@@ -177,9 +188,9 @@ form.sign-up-form {
 .panel {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
     z-index: 7;
 }
 
@@ -244,16 +255,16 @@ form.sign-up-form {
 }
 
 .container.sign-up-mode .right-panel {
-    pointer-events: all;
+    pointer-events:all;
 }
 
 .container.sign-up-mode .signin-signup {
     left: 25%;
 }
 
-/* .container.sign-up-mode .signup-signup{
+.container.sign-up-mode .signup-signup{
     right: 25%;
-} */
+}
 
 .container.sign-up-mode form.sign-in-form {
     z-index: 1;
